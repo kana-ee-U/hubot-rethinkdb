@@ -52,4 +52,4 @@ class RethinkdbAdapter extends Adapter
 
 
 exports.use = (robot) ->
-  new Sample robot
+  new RethinkdbAdapter robot
