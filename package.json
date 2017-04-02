@@ -1,0 +1,18 @@
+{
+  "name": "hubot-rethinkdb",
+  "version": "1.0.0",
+  "description": "Hubot adapter for Rethinkdb",
+  "main": "src/rethinkdb.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "github.com/kana-ee-U",
+  "license": "LGPLv3",
+  "dependencies": {
+    "parent-require": "^1.0.0",
+    "thinky": "^2.2.5"
+  },
+  "devDependencies": {
+    "coffee-script": ">=1.2.0"
+  }
+}
