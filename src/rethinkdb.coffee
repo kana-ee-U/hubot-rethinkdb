@@ -7,7 +7,7 @@ catch
 @rethinkdbdash_host = if process.env.RETHINKDB_HOST? then ['{ \"host\" : \"',process.env.RETHINKDB_HOST,'\"}'].join("") else '{}'
 @inline_configuration=JSON.parse @rethinkdbdash_host
 # Configure thinky with host or config file, whatever is provided
-thinky = require('thinky')(if process.env.RETHINKDBADSH_CONFIG_FILE? then require(process.env.RETHINKDBADSH_CONFIG_FILE) else @inline_configuration)
+thinky = require('thinky')(if process.env.RETHINKDBDASH_CONFIG_FILE? then require(process.env.RETHINKDBDASH_CONFIG_FILE) else @inline_configuration)
 
 
 class RethinkdbAdapter extends Adapter
